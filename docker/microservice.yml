@@ -1,0 +1,22 @@
+name: microservice-app
+services:
+  kafka-1:
+    extends:
+      file: ./kafka.yml
+      service: kafka-1
+  kafka-2:
+    extends:
+      file: ./kafka.yml
+      service: kafka-2
+  zookeeper-1:
+    extends:
+      file: ./kafka.yml
+      service: zookeeper-1
+  zookeeper-2:
+    extends:
+      file: ./kafka.yml
+      service: zookeeper-2
+  axon-server:
+    extends:
+      file: ./axon-server.yml
+      service: axon-server
